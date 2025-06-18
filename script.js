@@ -1,5 +1,10 @@
 let button = document.querySelector(".password-check");
-
+function checkpassword(passwrd){
+    if(passwrd === "Deltarune tomorrow"){
+        return check = true
+    }
+    else{ return check = false;}
+}
 // 1 - Write your function here
 // Write a function to test if the password is correct
 // The function should take in the text of the password
@@ -12,7 +17,8 @@ button.addEventListener("click", function() {
 
     // 2 - Call your function here, store the result in a variable
     // and use the variable to determine which message to display
-    if () {
+    check = checkpassword(password);
+    if (check) {
         document.querySelector(".yes").style = "display:block";
         document.querySelector(".denied").style = "display:none";
     } else {
